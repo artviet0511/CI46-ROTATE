@@ -31,14 +31,12 @@ class RegisterScreen extends HTMLElement {
     const displayName = this.$displayName.value;
     const password = this.$password.value;
     const confirmPassword = this.$confirmPassword.value;
-    console.log(email, displayName, password, confirmPassword);
     const result = await register(
       email,
       displayName,
       password,
       confirmPassword
     );
-    console.log(result);
     if (result.hasError) {
       this.$email.error = result.error.email;
       this.$displayName.error = result.error.displayName;

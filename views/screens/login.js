@@ -30,7 +30,6 @@ class LoginScreen extends HTMLElement {
     const email = this.$email.value;
     const password = this.$password.value;
     const result = login(email, password);
-    console.log(result);
     if (result.hasError) {
       this.$email.error = result.error.email;
       this.$password.error = result.error.password;
