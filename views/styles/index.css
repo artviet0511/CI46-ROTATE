@@ -108,6 +108,8 @@ body {
   /* z-index: 3; */
   background-color: rgb(106, 150, 209) !important;
   border: 2px solid black;
+  color: white;
+  font-size: 30px;
 }
 .mt-20pc{
   margin-top: 30%;
