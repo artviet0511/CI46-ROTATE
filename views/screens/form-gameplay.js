@@ -239,7 +239,6 @@ class Form_Gameplay extends HTMLElement {
     timeout() {
         setTimeout(() => {
             while (this.arrrandom.indexOf(this.i) != -1) {
-                console.log("a");
                 this.i = Math.floor(Math.random() * answers.length);
             }
             this.$texts.name = answers[this.i].answer;
