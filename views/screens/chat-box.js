@@ -85,7 +85,6 @@ class ChatScreen extends HTMLElement {
       if (event.keyCode === 13) {
         event.preventDefault();
         sendMsg(this.$message.value, this.activeCon);
-        console.log(this.$textInput.value);
         // this.$textInput.value = "";
       }
     })

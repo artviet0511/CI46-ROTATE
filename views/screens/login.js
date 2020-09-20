@@ -19,8 +19,8 @@ class LoginScreen extends HTMLElement {
         this.login();
       });
       this._shadowRoot.querySelector("#ForgotPassword").addEventListener('click', () => {
-        $forgotPassword = prompt("Nhập email của bạn ở đây")
-        auth.sendPasswordResetEmail($forgotPassword);
+        // $forgotPassword = prompt("Nhập email của bạn ở đây");
+        // auth.sendPasswordResetEmail($forgotPassword);
       })
     this.$form = this._shadowRoot.querySelector("#formLogin");
     this.$email = this.$form.querySelector('form-input[name="email"]');
